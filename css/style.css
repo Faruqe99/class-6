@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    transition-property: background-color;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    
+}
+
+h1:hover{
+      color:red;
+      background-color:aqua;
+    
+}
+.p_item{
+    width:200px;
+    height:200px;
+    background-color:blueviolet;
+    transition-property: background-color;
+    transition: 2s 1s  linear;
+}
+.p_item:hover{
+    width:500px;
+    background-color:green;
+    animation-play-state: paused;
+}
+.p1_item{
+    width:200px;
+    height:200px;
+    background-color:brown;
+    transition-property: background-color;
+    transition: 2s 1s  linear;
+    animation-name: preloader;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: 2s;
+
+}
+
+@keyframes preloader{
+    from{
+        background-color: blue;
+        width:200px;
+    }
+    to{
+        background-color: yellow;
+        width:500px;
+    }
+}
+.p2_item{
+    width:200px;
+    height:200px;
+    background-color:slategrey;
+    transition-property: background-color;
+    transition: 1s 2s  linear;
+    animation-name: preloader1;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    
+    
+
+}
+@keyframes preloader1{
+       0%{
+        background-color: aqua;
+        width:250px;
+       }
+       10%{
+        background-color: yellow;
+        width:300px;
+       }
+       20%{
+        background-color: gray;
+        width:350px;
+       }
+       30%{
+        background-color: green;
+        width:400px;
+       }
+       40%{
+        background-color: black;
+        width:450px;
+       }
+       50%{
+        background-color:blue;
+        width:500px;
+       }
+       60%{
+        background-color: brown;
+        width:550px;
+       }
+       70%{
+        background-color: chartreuse;
+        width:600px;
+       }
+       80%{
+        background-color: teal;
+        width:650px;
+       }
+       90%{
+        background-color: olive;
+        width:700px;
+       }
+       100%{
+        background-color: tomato;
+        width:750px;
+       }
+}
+ul{
+    list-style-type: none;
+  
+    
+}
+
+
+ul li{
+    display: inline;
+    
+}
+ul li a{
+    color:red;
+    background-color: aqua;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+
+
+
